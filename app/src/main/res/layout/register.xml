@@ -1,0 +1,140 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<LinearLayout
+			android:id="@+id/linear_main"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:background="@drawable/login_1"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/textview1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="10dp"
+				android:padding="8dp"
+				android:text="Create Profile"
+				android:textSize="16sp"
+				android:textColor="#FFFFFF"
+				android:layout_gravity="center_horizontal|center_vertical" />
+			<LinearLayout
+				android:id="@+id/l_pic"
+				android:layout_width="150dp"
+				android:layout_height="160dp"
+				android:layout_marginBottom="20dp"
+				android:background="#009688"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical"
+				android:layout_gravity="center_horizontal|center_vertical">
+				<ProgressBar
+					android:id="@+id/progressbar1"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:indeterminate="false"
+					style="?android:progressBarStyle" />
+				<ImageView
+					android:id="@+id/imageview1"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:src="@drawable/vhhjk_2"
+					android:scaleType="fitXY" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/l_item"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<LinearLayout
+					android:id="@+id/linear4"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:orientation="vertical">
+					<EditText
+						android:id="@+id/tx_first_name"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:paddingLeft="4dp"
+						android:paddingTop="8dp"
+						android:paddingRight="8dp"
+						android:paddingBottom="8dp"
+						android:gravity="center_vertical"
+						android:textSize="18sp"
+						android:textColor="#000000"
+						android:hint="First Name"
+						android:textColorHint="#607D8B"
+						android:singleLine="true"
+						android:imeOptions="actionNext" />
+					<EditText
+						android:id="@+id/tx_last_name"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:paddingLeft="4dp"
+						android:paddingTop="8dp"
+						android:paddingRight="8dp"
+						android:paddingBottom="8dp"
+						android:gravity="center_vertical"
+						android:textSize="18sp"
+						android:textColor="#000000"
+						android:hint="Last Name"
+						android:textColorHint="#607D8B"
+						android:singleLine="true"
+						android:imeOptions="actionGo" />
+				</LinearLayout>
+			</LinearLayout>
+			<EditText
+				android:id="@+id/edittext1"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:paddingLeft="4dp"
+				android:paddingTop="8dp"
+				android:paddingRight="8dp"
+				android:paddingBottom="8dp"
+				android:gravity="center_vertical"
+				android:textSize="18sp"
+				android:textColor="#000000"
+				android:hint="Email"
+				android:textColorHint="#607D8B"
+				android:singleLine="true"
+				android:imeOptions="actionGo" />
+			<Spinner
+				android:id="@+id/spinner1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:spinnerMode="dropdown" />
+		</LinearLayout>
+	</LinearLayout>
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/_fab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="16dp"
+		android:layout_gravity="right|bottom"
+		app:srcCompat="@drawable/ic_arrow_forward_white" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

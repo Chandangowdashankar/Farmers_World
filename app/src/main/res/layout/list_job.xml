@@ -1,0 +1,129 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dp"
+		android:padding="1dp"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:padding="1dp"
+			android:orientation="horizontal">
+			<de.hdodenhof.circleimageview.CircleImageView
+				android:id="@+id/circleimageview1"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_marginLeft="10dp"
+				android:src="@drawable/default_image"
+				android:layout_gravity="center_horizontal|center_vertical"
+				app:civ_border_width="3dp"
+				app:civ_border_color="#008DCD"
+				app:civ_circle_background_color="#FFFFFF"
+				app:civ_border_overlay="true" />
+			<TextView
+				android:id="@+id/textview1"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="TextView"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:textColor="#000000" />
+			<ImageView
+				android:id="@+id/imageview1"
+				android:focusable="false"
+				android:layout_width="15dp"
+				android:layout_height="15dp"
+				android:src="@drawable/ic_verified_large"
+				android:scaleType="fitXY"
+				android:layout_gravity="center_horizontal|center_vertical" />
+		</LinearLayout>
+		<TextView
+			android:id="@+id/textview2"
+			android:focusable="false"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:padding="8dp"
+			android:text="TextView"
+			android:textSize="18sp"
+			android:textColor="#000000" />
+		<TextView
+			android:id="@+id/textview3"
+			android:focusable="false"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:padding="8dp"
+			android:text="TextView"
+			android:textSize="18sp"
+			android:textColor="#000000" />
+		<TextView
+			android:id="@+id/textview4"
+			android:focusable="false"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:padding="8dp"
+			android:text="TextView"
+			android:textSize="18sp"
+			android:textColor="#000000" />
+		<TextView
+			android:id="@+id/textview5"
+			android:focusable="false"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:padding="8dp"
+			android:text="TextView"
+			android:textSize="18sp"
+			android:textColor="#000000" />
+		<TextView
+			android:id="@+id/textview6"
+			android:focusable="false"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:padding="8dp"
+			android:text="TextView"
+			android:textSize="18sp"
+			android:textColor="#000000" />
+		<ImageView
+			android:id="@+id/imageview3"
+			android:focusable="false"
+			android:layout_width="300dp"
+			android:layout_height="350dp"
+			android:layout_marginTop="10dp"
+			android:src="@drawable/default_image"
+			android:scaleType="fitXY"
+			android:layout_gravity="center_horizontal|center_vertical" />
+		<LinearLayout
+			android:id="@+id/linear3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+			<Button
+				android:id="@+id/button1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="Call Us"
+				android:textSize="18sp"
+				android:textColor="#000000" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
